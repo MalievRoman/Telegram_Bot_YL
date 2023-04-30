@@ -31,4 +31,5 @@ class Weather:
     def all(self):
         return f'Температура: {self.data["main"]["temp"]}°C, чувствуется как: {self.data["main"]["feels_like"]}°C. \n' \
                f'Давление: {self.data["main"]["pressure"]} Па.\n' \
-               f'Влажность воздуха: {self.data["main"]["humidity"]}г/м³.'
+               f'Влажность воздуха: {self.data["main"]["humidity"]}г/м³.'\
+               f'В корне проекта появился файл с сохраненными данными'
