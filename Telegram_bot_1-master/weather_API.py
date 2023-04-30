@@ -29,14 +29,6 @@ class Weather:
         return f'Влажность воздуха: {self.data["main"]["humidity"]}г/м³.'
 
     def all(self):
-        path = 'weather.txt'
-        with open(path, 'r+') as file:
-            file.truncate()
-        f = open('weather.txt', 'w')
-        print(f'Температура: {self.data["main"]["temp"]}°C, чувствуется как: {self.data["main"]["feels_like"]}°C. \n',
-               f'Давление: {self.data["main"]["pressure"]} Па.\n',
-               f'Влажность воздуха: {self.data["main"]["humidity"]}г/м³.\n', file=f)
-        f.close()
         return f'Температура: {self.data["main"]["temp"]}°C, чувствуется как: {self.data["main"]["feels_like"]}°C. \n' \
                f'Давление: {self.data["main"]["pressure"]} Па.\n' \
                f'Влажность воздуха: {self.data["main"]["humidity"]}г/м³.\n'\
