@@ -87,7 +87,7 @@ async def successful_payment(message: types.Message):
     await bot.send_message(message.chat.id,
                            f"Платёж на сумму {message.successful_payment.total_amount // 100}"
                            f" {message.successful_payment.currency}"
-                           f" прошел успешно. Ссылка на группу: https://t.me/+14ZHw2YkBSswNzli")
+                           f" прошел успешно. Ссылка на бота: https://t.me/First_test_108_bot")
 
 
 if __name__ == "__main__":
